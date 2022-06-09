@@ -9,14 +9,28 @@ It collects metrics like CPU, memory or Disk IO consumption for containers or no
 ```sh
 4443
 ```
-## Clone Metric-server helm chart on K8 Master
+## Installation via components.yaml manifest
 ```sh
-git clone https://github.com/prawinkorvi/metric-server.git
+https://github.com/kubernetes-sigs/metrics-server
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 ```
 
-## Create Metric Server
+## Installation via local copy
 ```sh
+git clone https://github.com/kubernetes-sigs/metrics-server.git
+#git clone https://github.com/prawinkorvi/metric-server.git
 kubectl create -f .
+```
+
+## HELM way
+```sh
+https://artifacthub.io/packages/helm/metrics-server/metrics-server
+Add the metrics-server repo to helm:
+helm repo add metrics-server https://kubernetes-sigs.github.io/metrics-server/
+helm upgrade --install metrics-server metrics-server/metrics-server
+```
+## Test
+```sh
 kubectl top pods
 kubectl top nodes
 ```
