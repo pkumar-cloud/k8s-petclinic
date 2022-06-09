@@ -11,7 +11,7 @@ It collects metrics like CPU, memory or Disk IO consumption for containers or no
 ```
 ## Installation via components.yaml manifest
 ```sh
-https://github.com/kubernetes-sigs/metrics-server
+#Source -> https://github.com/kubernetes-sigs/metrics-server
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 ```
 
@@ -24,8 +24,8 @@ kubectl create -f .
 
 ## HELM way
 ```sh
-https://artifacthub.io/packages/helm/metrics-server/metrics-server
-Add the metrics-server repo to helm:
+#Source -> https://artifacthub.io/packages/helm/metrics-server/metrics-server
+#Add the metrics-server repo to helm:
 helm repo add metrics-server https://kubernetes-sigs.github.io/metrics-server/
 helm upgrade --install metrics-server metrics-server/metrics-server
 ```
