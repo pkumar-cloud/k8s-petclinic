@@ -3,6 +3,7 @@
 ## What is Metric Server?
 ```sh
 It collects metrics like CPU, memory or Disk IO consumption for containers or nodes, from the Summary API, exposed by Kubelet on each node.
+The Kubernetes Metrics Server is an aggregator of resource usage data in k8s cluster and used by k8s add ons, such as the Horizontal Pod Autoscaler or the Kubernetes Dashboard.
 ```
 
 ## Enable 4443 port on Master and Worker Nodes
@@ -31,6 +32,7 @@ helm upgrade --install metrics-server metrics-server/metrics-server
 ```
 ## Test
 ```sh
+kubectl get deployment metrics-server -n kube-system
 kubectl top pods
 kubectl top nodes
 ```
