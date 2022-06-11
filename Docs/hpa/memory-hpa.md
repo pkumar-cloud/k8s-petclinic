@@ -23,10 +23,16 @@ spec:
  
  ## Install stress package inside the Application pod
  ```sh
+ kubectl exec -it <PN> bash
+ cat /etc/os-release
  apt-get update
  apt-get install stress
  ```
-## Execute stress command to increase memory utilization on pod
+## Execute stress command on POD where stress is installed to increase memory utilization on pod
 ```sh
-stress --vm 1 --vm-bytes 250M  
+stress --vm 1 --vm-bytes 500M 
+kubectl top pods
+kubectl get hpa
+#After stopping cooling period is 5 mins.
 ```
+
