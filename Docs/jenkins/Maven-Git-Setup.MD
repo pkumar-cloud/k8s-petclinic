@@ -15,12 +15,12 @@ source ~/.bash_profile
 
 Validate Maven
 
-mvn version
+mvn -version
 ```
 
 ## Install git
 ```sh
-yum install git
+yum install -y git
 
 
 ```
