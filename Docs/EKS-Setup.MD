@@ -55,6 +55,9 @@ You can follow same procedure in the official  AWS document [Getting started wit
    --nodes-min 2 \
    --nodes-max 2 \ 
    --zones ap-south-1a,ap-south-1b
+   
+   OR, eksctl create cluster --version=1.14 --name suhas-eks-test --region us-east-1 --zones us-east-1a,us-east-1b --node-type t2.medium --nodes 2
+   eksctl scale nodegroup --cluster pkeks-cluster --name <NodeGrpName> --nodes 2 --region us-east-1
     ```
 
 5. To delete the EKS clsuter 
