@@ -8,6 +8,7 @@
 ## Install Java
 We will be using open java for our demo, Get latest version from http://openjdk.java.net/install/
 ```sh
+hostnamectl set-hostname jenkins
 yum install -y java-1.8*
 #yum -y install java-1.8.0-openjdk
 ```
