@@ -4,7 +4,7 @@ You can follow same procedure in the official  AWS document [Getting started wit
 
 #### Pre-requisites: 
   - an EC2 Instance (Kubernetes Management Host)
-
+  - hostnamectl set-hostname k8smgmt
 # 
 1. Install and setup kubectl on Management host
    a. Download kubectl version 1.19.6 
