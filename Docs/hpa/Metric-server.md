@@ -20,6 +20,7 @@ kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/late
 ```sh
 git clone https://github.com/kubernetes-sigs/metrics-server.git
 #git clone https://github.com/prawinkorvi/metric-server.git
+#git clone https://github.com/initsixcloud/metric-server.git
 kubectl create -f .
 ```
 
