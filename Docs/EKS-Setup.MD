@@ -35,6 +35,7 @@ You can follow same procedure in the official  AWS document [Getting started wit
    VPC    
    CloudFormation
    AdministratorAccess
+   
    Attach this role to EKS mgmt EC2 instance.
 
 4. Create EKS cluster and nodes from EC2 Management Host
