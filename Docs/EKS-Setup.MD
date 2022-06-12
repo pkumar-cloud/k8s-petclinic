@@ -30,7 +30,6 @@ You can follow same procedure in the official  AWS document [Getting started wit
 3. Create an IAM Role and attach it to EC2 instance Management Host  
    `Note: create IAM user with programmatic access if your bootstrap system is outside of AWS`   
    IAM user should have access to   
-   
    AmazonEC2FullAccess
    IAMFullAccess
    AdministratorAccess
